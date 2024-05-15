@@ -8,5 +8,14 @@
     <artifactId>MyTestNG</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- 添加TestNG的依赖 -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.5</version> <!-- 使用你需要的TestNG版本 -->
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>
