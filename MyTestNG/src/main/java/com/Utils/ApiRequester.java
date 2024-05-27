@@ -3,11 +3,11 @@ package com.Utils;
 import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
+
 import com.Base.ApiResponse;
 import com.alibaba.fastjson2.JSONObject;
 import com.google.gson.Gson;
 import lombok.SneakyThrows;
-import org.apache.hc.client5.http.impl.routing.SystemDefaultRoutePlanner;
 
 public class ApiRequester {
 
@@ -16,7 +16,7 @@ public class ApiRequester {
     public Object apiReqObject;
 
     @SneakyThrows
-    public String handle(){
+    public String handle() {
         //Set headers
         HashMap<String, String> headers = new HashMap<>();
 
@@ -24,7 +24,7 @@ public class ApiRequester {
         String req = new Gson().toJson(apiReqObject);
 
         //Build request URL
-        String url = "https://tenapi.cn/v2/toutiaohotnew";
+        String url = "https://api.jiejiariapi.com/v1/holidays/2024";
 
         //Send request
         Map<String, Object> body = new HashMap<>();

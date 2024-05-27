@@ -50,6 +50,7 @@ public class HttpUtil {
     public static String doGetRequest(String url, Map<String, Object> map, HashMap<String, String> headers) {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGetRequest = new HttpGet(url);
+        httpGetRequest.setHeader("Content-Type", "application/json");
 
         //headers
         if (headers != null && headers.size() >0) {
